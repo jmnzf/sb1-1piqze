@@ -1,0 +1,41 @@
+.admin-container {
+  @apply max-w-7xl mx-auto px-4 py-8;
+}
+
+.admin-header {
+  @apply flex justify-between items-center mb-8;
+}
+
+.admin-title {
+  @apply text-2xl font-bold text-gray-900 dark:text-white;
+}
+
+.logout-button {
+  @apply px-4 py-2 bg-red-600 text-white rounded-lg
+         hover:bg-red-700 transition-colors;
+}
+
+.admin-grid {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6;
+}
+
+.admin-card {
+  @apply bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md;
+}
+
+.card-header {
+  @apply flex items-center justify-between mb-4;
+}
+
+.card-title {
+  @apply text-lg font-semibold text-gray-900 dark:text-white;
+}
+
+.card-value {
+  @apply text-3xl font-bold text-[--color-text-green];
+}
+
+.loading {
+  @apply flex items-center justify-center min-h-[60vh]
+         text-xl text-gray-600 dark:text-gray-400;
+}

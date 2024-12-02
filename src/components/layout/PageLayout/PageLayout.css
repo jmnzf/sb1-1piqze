@@ -1,0 +1,17 @@
+.page-layout {
+  @apply min-h-screen flex flex-col;
+}
+
+.page-content {
+  @apply flex-grow pt-[85px] transition-all duration-300;
+}
+
+/* Adjust padding when header is collapsed */
+.page-content.header-collapsed {
+  @apply pt-[64px];
+}
+
+/* Add bottom margin to ensure content doesn't touch footer */
+.page-content-inner {
+  @apply container mx-auto px-8 py-24;
+}

@@ -1,0 +1,64 @@
+.contact-info {
+  @apply space-y-6;
+}
+
+.contact-title {
+  @apply text-2xl font-bold text-gray-900 dark:text-white mb-6;
+}
+
+.form-grid {
+  @apply grid grid-cols-1 md:grid-cols-2 gap-6;
+}
+
+.form-group {
+  @apply space-y-2;
+}
+
+.form-label {
+  @apply block text-sm font-medium text-gray-700 dark:text-gray-300;
+}
+
+.form-input {
+  @apply w-full px-4 py-2 border border-gray-300 dark:border-gray-600
+         rounded-lg bg-white dark:bg-gray-700
+         text-gray-900 dark:text-white
+         focus:ring-2 focus:ring-[--color-text-green] focus:border-transparent
+         placeholder-gray-400;
+}
+
+.form-select {
+  @apply w-full px-4 py-2 border border-gray-300 dark:border-gray-600
+         rounded-lg bg-white dark:bg-gray-700
+         text-gray-900 dark:text-white
+         focus:ring-2 focus:ring-[--color-text-green] focus:border-transparent;
+}
+
+.form-checkbox-group {
+  @apply flex items-center space-x-2;
+}
+
+.form-checkbox {
+  @apply rounded border-gray-300 dark:border-gray-600
+         text-[--color-text-green] 
+         focus:ring-[--color-text-green];
+}
+
+.form-checkbox-label {
+  @apply text-sm text-gray-600 dark:text-gray-400;
+}
+
+.buttons-group {
+  @apply flex gap-4 mt-8;
+}
+
+.back-button {
+  @apply flex-1 py-3 px-6 rounded-full
+         border-2 border-[--color-text-green] text-[--color-text-green]
+         hover:bg-[--color-text-green] hover:text-white
+         transition-colors;
+}
+
+.next-button {
+  @apply flex-1 bg-[--color-text-green] text-white py-3 rounded-full
+         hover:bg-green-700 transition-colors;
+}

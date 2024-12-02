@@ -1,0 +1,7 @@
+.analytics-content {
+  @apply bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md;
+}
+
+.analytics-grid {
+  @apply grid grid-cols-1 md:grid-cols-2 gap-6;
+}

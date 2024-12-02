@@ -1,0 +1,80 @@
+.payment-method {
+  @apply space-y-6;
+}
+
+.payment-title {
+  @apply text-2xl font-bold text-gray-900 dark:text-white mb-6;
+}
+
+.payment-form {
+  @apply space-y-6;
+}
+
+.card-preview {
+  @apply bg-white dark:bg-gray-800 rounded-lg p-4 mb-6
+         border border-gray-200 dark:border-gray-700;
+}
+
+.card-header {
+  @apply flex justify-between items-center mb-4;
+}
+
+.card-logo {
+  @apply h-8;
+}
+
+.card-number {
+  @apply text-xl font-mono tracking-wider mb-4;
+}
+
+.card-footer {
+  @apply flex justify-between text-sm;
+}
+
+.payment-options {
+  @apply flex gap-4 mb-6;
+}
+
+.payment-option {
+  @apply w-12 h-8 rounded border border-gray-200 dark:border-gray-700
+         flex items-center justify-center opacity-50 transition-opacity;
+}
+
+.payment-option.active {
+  @apply opacity-100;
+}
+
+.form-group {
+  @apply space-y-2;
+}
+
+.form-label {
+  @apply block text-sm font-medium text-gray-700 dark:text-gray-300;
+}
+
+.form-input {
+  @apply w-full px-4 py-2 border border-gray-300 dark:border-gray-600
+         rounded-lg bg-white dark:bg-gray-700
+         text-gray-900 dark:text-white
+         focus:ring-2 focus:ring-[--color-text-green] focus:border-transparent;
+}
+
+.expiry-cvv {
+  @apply grid grid-cols-2 gap-4;
+}
+
+.buttons-group {
+  @apply flex gap-4 mt-8;
+}
+
+.back-button {
+  @apply flex-1 py-3 px-6 rounded-full
+         border-2 border-[--color-text-green] text-[--color-text-green]
+         hover:bg-[--color-text-green] hover:text-white
+         transition-colors;
+}
+
+.next-button {
+  @apply flex-1 bg-[--color-text-green] text-white py-3 rounded-full
+         hover:bg-green-700 transition-colors;
+}

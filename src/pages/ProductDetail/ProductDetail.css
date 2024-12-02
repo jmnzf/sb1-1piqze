@@ -1,0 +1,154 @@
+.product-detail {
+  @apply container mx-auto px-4 py-8;
+}
+
+.breadcrumb {
+  @apply flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400 mb-8;
+}
+
+.breadcrumb-separator {
+  @apply text-gray-400;
+}
+
+.breadcrumb-link {
+  @apply hover:text-[--color-text-green] transition-colors;
+}
+
+.product-grid {
+  @apply grid grid-cols-1 md:grid-cols-2 gap-8;
+}
+
+.product-images {
+  @apply flex gap-4;
+}
+
+.thumbnail-grid {
+  @apply flex flex-col gap-4 w-20;
+}
+
+.thumbnail {
+  @apply aspect-square bg-gray-100 dark:bg-gray-800 rounded-lg overflow-hidden cursor-pointer
+         ring-2 ring-transparent hover:ring-[--color-text-green] transition-all;
+}
+
+.thumbnail.active {
+  @apply ring-[--color-text-green];
+}
+
+.thumbnail img {
+  @apply w-full h-full object-cover;
+}
+
+.main-image-container {
+  @apply flex-1;
+}
+
+.main-image {
+  @apply aspect-square bg-gray-100 dark:bg-gray-800 rounded-lg overflow-hidden;
+}
+
+.main-image img {
+  @apply w-full h-full object-cover;
+}
+
+.product-info {
+  @apply space-y-6;
+}
+
+.seller-info {
+  @apply flex items-center gap-4 mb-4;
+}
+
+.seller-avatar {
+  @apply w-12 h-12 rounded-full bg-gray-200 dark:bg-gray-700 overflow-hidden;
+}
+
+.seller-avatar img {
+  @apply w-full h-full object-cover;
+}
+
+.seller-details {
+  @apply flex-1;
+}
+
+.seller-name {
+  @apply text-sm text-[--color-text-green] hover:underline;
+}
+
+.seller-badge {
+  @apply text-xs text-gray-600 dark:text-gray-400;
+}
+
+.visit-seller {
+  @apply text-sm text-[--color-text-green] hover:underline;
+}
+
+.product-title {
+  @apply text-2xl font-semibold text-gray-900 dark:text-white;
+}
+
+.product-rating {
+  @apply flex items-center gap-4;
+}
+
+.stars {
+  @apply flex text-yellow-400;
+}
+
+.rating-info {
+  @apply text-sm text-gray-600 dark:text-gray-400;
+}
+
+.product-price {
+  @apply flex items-baseline gap-2;
+}
+
+.current-price {
+  @apply text-3xl font-bold text-gray-900 dark:text-white;
+}
+
+.original-price {
+  @apply text-lg text-gray-500 line-through;
+}
+
+.product-options {
+  @apply space-y-4;
+}
+
+.options-title {
+  @apply text-sm font-medium text-gray-700 dark:text-gray-300;
+}
+
+.options-grid {
+  @apply grid grid-cols-4 gap-2;
+}
+
+.option-button {
+  @apply px-4 py-2 border-2 rounded-full text-sm
+         hover:border-[--color-text-green] hover:text-[--color-text-green]
+         transition-colors;
+}
+
+.option-button.active {
+  @apply border-[--color-text-green] text-[--color-text-green];
+}
+
+.quantity-selector {
+  @apply flex items-center gap-2;
+}
+
+.quantity-button {
+  @apply w-10 h-10 flex items-center justify-center rounded-full
+         border-2 border-gray-300 dark:border-gray-600
+         hover:border-[--color-text-green] hover:text-[--color-text-green]
+         transition-colors;
+}
+
+.quantity-input {
+  @apply w-16 text-center;
+}
+
+.add-to-cart {
+  @apply w-full bg-[--color-text-green] text-white py-3 rounded-full
+         hover:bg-green-700 transition-colors;
+}

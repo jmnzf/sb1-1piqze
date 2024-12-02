@@ -1,0 +1,48 @@
+.order-confirmation {
+  @apply text-center space-y-8 py-8;
+}
+
+.confirmation-icon {
+  @apply w-24 h-24 mx-auto text-[--color-text-green]
+         animate-[bounce_1s_ease-in-out];
+}
+
+.confirmation-title {
+  @apply text-3xl font-bold text-[--color-text-green];
+}
+
+.order-number {
+  @apply text-lg text-gray-600 dark:text-gray-400;
+}
+
+.confirmation-details {
+  @apply max-w-md mx-auto mt-8 space-y-4
+         bg-white dark:bg-gray-800 rounded-lg p-6;
+}
+
+.detail-row {
+  @apply flex justify-between text-sm;
+}
+
+.detail-label {
+  @apply text-gray-600 dark:text-gray-400;
+}
+
+.detail-value {
+  @apply text-gray-900 dark:text-white font-medium;
+}
+
+.action-buttons {
+  @apply flex flex-col gap-4 mt-8 max-w-md mx-auto;
+}
+
+.continue-shopping {
+  @apply bg-[--color-text-green] text-white py-3 rounded-full
+         hover:bg-green-700 transition-colors;
+}
+
+.view-order {
+  @apply border-2 border-[--color-text-green] text-[--color-text-green]
+         py-3 rounded-full hover:bg-[--color-text-green] hover:text-white
+         transition-colors;
+}

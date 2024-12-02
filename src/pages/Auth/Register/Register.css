@@ -1,0 +1,124 @@
+.register-container {
+  @apply min-h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8
+         bg-gray-50 dark:bg-gray-900;
+}
+
+.register-content {
+  @apply max-w-md w-full space-y-8 bg-white dark:bg-gray-800
+         p-8 rounded-2xl shadow-lg;
+}
+
+.register-header {
+  @apply text-center space-y-6;
+}
+
+.register-logo {
+  @apply h-24 w-auto mx-auto;
+}
+
+.register-title {
+  @apply text-3xl font-bold text-gray-900 dark:text-white;
+}
+
+.register-subtitle {
+  @apply text-sm text-gray-600 dark:text-gray-400;
+}
+
+.social-buttons {
+  @apply space-y-3 mt-6;
+}
+
+.social-button {
+  @apply w-full flex items-center justify-center gap-3 px-4 py-2 
+         border border-gray-300 dark:border-gray-600 rounded-lg
+         text-sm font-medium text-gray-700 dark:text-gray-200
+         hover:bg-gray-50 dark:hover:bg-gray-700
+         transition-colors;
+}
+
+.google-button {
+  @apply bg-white dark:bg-gray-800;
+}
+
+.facebook-button {
+  @apply bg-[#1877F2] border-[#1877F2] text-white 
+         hover:bg-[#1666d8] dark:hover:bg-[#1666d8];
+}
+
+.divider {
+  @apply relative my-6;
+}
+
+.divider-line {
+  @apply absolute top-1/2 left-0 w-full border-t border-gray-300 dark:border-gray-600;
+}
+
+.divider-text {
+  @apply relative z-10 bg-white dark:bg-gray-800 px-4 text-sm text-gray-500
+         mx-auto w-fit;
+}
+
+.register-form {
+  @apply mt-8 space-y-6;
+}
+
+.form-group {
+  @apply space-y-2;
+}
+
+.form-group label {
+  @apply block text-sm font-medium text-gray-700 dark:text-gray-300;
+}
+
+.input-group {
+  @apply relative rounded-lg;
+}
+
+.input-icon {
+  @apply absolute left-3 top-1/2 transform -translate-y-1/2
+         w-5 h-5 text-gray-400;
+}
+
+.input-group input {
+  @apply block w-full pl-10 pr-3 py-2 
+         border border-gray-300 dark:border-gray-600
+         rounded-lg
+         bg-white dark:bg-gray-700
+         text-gray-900 dark:text-white
+         placeholder-gray-400
+         focus:outline-none focus:ring-2 focus:ring-[--color-text-green]
+         focus:border-transparent
+         transition-colors;
+}
+
+.password-toggle {
+  @apply absolute right-3 top-1/2 transform -translate-y-1/2
+         text-gray-400 hover:text-gray-600 dark:hover:text-gray-300
+         focus:outline-none;
+}
+
+.terms {
+  @apply text-sm text-gray-600 dark:text-gray-400;
+}
+
+.terms a {
+  @apply text-[--color-text-green] hover:text-green-700 font-medium;
+}
+
+.register-button {
+  @apply w-full flex justify-center py-2 px-4
+         border border-transparent rounded-lg
+         text-sm font-medium text-white
+         bg-[--color-text-green] hover:bg-green-700
+         focus:outline-none focus:ring-2 focus:ring-offset-2
+         focus:ring-[--color-text-green]
+         transition-colors;
+}
+
+.login-prompt {
+  @apply text-center text-sm text-gray-600 dark:text-gray-400;
+}
+
+.login-link {
+  @apply font-medium text-[--color-text-green] hover:text-green-700;
+}

@@ -1,0 +1,68 @@
+.checkout-wizard {
+  @apply max-w-6xl mx-auto px-4 py-8;
+}
+
+.wizard-steps {
+  @apply flex items-center justify-between mb-12;
+}
+
+.step {
+  @apply flex items-center;
+}
+
+.step-number {
+  @apply w-10 h-10 rounded-full flex items-center justify-center
+         text-lg font-medium transition-colors;
+}
+
+.step-number.active {
+  @apply bg-[--color-text-green] text-white;
+}
+
+.step-number.completed {
+  @apply bg-[--color-text-green] text-white;
+}
+
+.step-number.pending {
+  @apply bg-gray-300 text-gray-600;
+}
+
+.step-line {
+  @apply flex-1 h-[2px] mx-4;
+}
+
+.step-line.active {
+  @apply bg-[--color-text-green];
+}
+
+.step-line.pending {
+  @apply bg-gray-300;
+}
+
+.step-label {
+  @apply text-sm font-medium;
+}
+
+.step-label.active {
+  @apply text-[--color-text-green];
+}
+
+.step-label.completed {
+  @apply text-[--color-text-green];
+}
+
+.step-label.pending {
+  @apply text-gray-500;
+}
+
+.wizard-content {
+  @apply grid grid-cols-1 lg:grid-cols-3 gap-8;
+}
+
+.main-content {
+  @apply lg:col-span-2 space-y-8;
+}
+
+.summary-content {
+  @apply lg:col-span-1;
+}

@@ -1,0 +1,48 @@
+.business-sidebar {
+  @apply fixed left-0 w-64 bg-[--color-primary] text-white
+         transition-all duration-300 z-30
+         top-[85px] bottom-0;
+}
+
+.sidebar-content {
+  @apply p-4 space-y-6 h-full overflow-y-auto;
+}
+
+.sidebar-section {
+  @apply space-y-2;
+}
+
+.sidebar-link {
+  @apply flex items-center gap-3 px-4 py-3 rounded-lg
+         text-gray-300 hover:text-white hover:bg-[#121212]
+         transition-colors duration-200;
+}
+
+.sidebar-link.active {
+  @apply bg-[#121212] text-[--color-text-green];
+}
+
+.sidebar-link.active .sidebar-icon {
+  @apply text-[--color-text-green];
+}
+
+.sidebar-icon {
+  @apply w-5 h-5 text-gray-400;
+}
+
+.sidebar-text {
+  @apply text-sm font-medium;
+}
+
+.sidebar-header {
+  @apply px-4 py-2 mb-4;
+}
+
+.sidebar-title {
+  @apply text-lg font-medium text-[--color-text-green];
+}
+
+/* Adjust sidebar position when header is collapsed */
+.header.collapsed ~ .business-layout .business-sidebar {
+  @apply top-[64px];
+}

@@ -1,0 +1,7 @@
+.cart-title {
+  @apply text-2xl font-bold mb-6;
+}
+
+.cart-items {
+  @apply space-y-4;
+}

@@ -1,0 +1,27 @@
+.catalog-container {
+  @apply container mx-auto px-4 py-8;
+}
+
+.catalog-title {
+  @apply text-3xl font-bold mb-8;
+}
+
+.catalog-content {
+  @apply flex gap-8;
+}
+
+.filters-sidebar {
+  @apply w-64 flex-shrink-0;
+}
+
+.filters-wrapper {
+  @apply sticky top-[100px] transition-all duration-300;
+}
+
+.filters-wrapper.header-collapsed {
+  @apply top-[80px];
+}
+
+.products-grid {
+  @apply flex-1 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6;
+}

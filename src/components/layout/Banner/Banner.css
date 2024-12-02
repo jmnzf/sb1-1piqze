@@ -1,0 +1,87 @@
+.banner {
+  @apply relative w-full h-[500px] md:mt-[-85px] lg:mt-[0px] xl:mt-[0px];
+  width: 100vw !important;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+}
+
+.banner-slide {
+  @apply relative h-full;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.banner-overlay {
+  @apply absolute inset-0;
+}
+
+.banner-content {
+  @apply h-full flex items-center;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.banner-text {
+  @apply w-full md:w-1/2 text-left space-y-6 text-white relative z-10 mt-0 !important;
+}
+
+.banner-title {
+  @apply text-8xl md:text-6xl font-bold font-volkswagen text-[--color-text-green] space-y-0 mt-0;
+}
+
+.banner-pretitle {
+  @apply text-8xl md:text-2xl font-semibold font-dm-sans text-[--color-primary] space-y-0;
+}
+
+.banner-text2 {
+  @apply text-2xl md:text-xl font-dm-sans font-normal text-[--color-primary];
+}
+
+.banner-subtitle {
+  @apply text-xl text-gray-100 max-w-lg font-thin font-dm-sans text-[--color-primary];
+}
+
+/* Navigation Arrows */
+.swiper-button-prev,
+.swiper-button-next {
+  @apply w-12 h-12 bg-white rounded-full flex items-center justify-center
+         shadow-lg transition-all !important;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  @apply bg-gray-100 !important;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  @apply text-[#142334] text-xl !important;
+}
+
+/* Adjust arrow positions */
+.swiper-button-prev {
+  @apply left-4 !important;
+}
+
+.swiper-button-next {
+  @apply right-4 !important;
+}
+
+/* Pagination Bullets */
+.swiper-pagination-bullet {
+  @apply bg-white/50 !important;
+  width: 10px !important;
+  height: 10px !important;
+}
+
+.swiper-pagination-bullet-active {
+  @apply bg-white !important;
+}
+
+/* Container for pagination */
+.swiper-pagination {
+  @apply bottom-6 !important;
+}

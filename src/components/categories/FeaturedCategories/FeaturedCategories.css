@@ -1,0 +1,15 @@
+.featured-categories {
+  @apply py-12 bg-gray-50;
+}
+
+.featured-categories-container {
+  @apply container mx-auto px-4;
+}
+
+.featured-categories-title {
+  @apply text-3xl font-semibold text-gray-900 font-dm-sans mb-6 text-left;
+}
+
+.categories-grid {
+  @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6;
+}

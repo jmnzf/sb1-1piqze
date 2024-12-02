@@ -1,0 +1,39 @@
+.terms-page {
+  @apply py-12 bg-white dark:bg-gray-900;
+}
+
+.terms-container {
+  @apply max-w-4xl mx-auto px-4;
+}
+
+.terms-header {
+  @apply mb-12 text-center;
+}
+
+.terms-title {
+  @apply text-4xl font-bold text-gray-900 dark:text-white mb-4;
+}
+
+.terms-subtitle {
+  @apply text-lg text-gray-600 dark:text-gray-400;
+}
+
+.terms-content {
+  @apply space-y-8;
+}
+
+.terms-section {
+  @apply space-y-4;
+}
+
+.section-title {
+  @apply text-2xl font-semibold text-gray-900 dark:text-white mb-4;
+}
+
+.section-content {
+  @apply text-gray-700 dark:text-gray-300 space-y-4 leading-relaxed;
+}
+
+.section-list {
+  @apply list-disc pl-6 space-y-2 text-gray-700 dark:text-gray-300;
+}

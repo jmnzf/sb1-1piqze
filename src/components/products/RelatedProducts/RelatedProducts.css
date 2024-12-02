@@ -1,0 +1,27 @@
+.related-products {
+  @apply py-12 border-t border-gray-200 dark:border-gray-700;
+}
+
+.related-products-header {
+  @apply flex justify-between items-center mb-8;
+}
+
+.related-products-title {
+  @apply text-2xl font-semibold text-gray-900 dark:text-white;
+}
+
+.products-slider {
+  @apply relative;
+}
+
+.slider-container {
+  @apply overflow-hidden;
+}
+
+.slider-wrapper {
+  @apply flex gap-6;
+}
+
+.product-slide {
+  @apply flex-none w-[280px];
+}

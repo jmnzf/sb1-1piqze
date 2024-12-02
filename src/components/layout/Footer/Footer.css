@@ -1,0 +1,73 @@
+.footer {
+  @apply bg-[#15202B] text-white py-16;
+}
+
+.footer-container {
+  @apply container mx-auto px-4;
+}
+
+.footer-content {
+  @apply grid grid-cols-1 md:grid-cols-4 gap-8;
+}
+
+.footer-brand {
+  @apply space-y-6;
+}
+
+.footer-logo {
+  @apply h-24 w-auto;
+}
+
+.newsletter {
+  @apply space-y-4;
+}
+
+.newsletter-title {
+  @apply text-xl font-semibold;
+}
+
+.newsletter-form {
+  @apply flex gap-2;
+}
+
+.newsletter-input {
+  @apply bg-gray-800 text-white px-4 py-2 rounded-lg flex-grow
+         placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#009E3C];
+}
+
+.newsletter-button {
+  @apply bg-[#009E3C] text-white px-4 py-2 rounded-lg
+         hover:bg-[#008033] transition-colors;
+}
+
+.footer-links {
+  @apply space-y-4;
+}
+
+.footer-section-title {
+  @apply text-[#009E3C] font-semibold text-lg mb-4;
+}
+
+.footer-link {
+  @apply block text-gray-300 hover:text-white transition-colors py-1;
+}
+
+.footer-bottom {
+  @apply mt-12 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4;
+}
+
+.footer-legal {
+  @apply flex flex-wrap gap-6 text-sm text-gray-400;
+}
+
+.legal-link {
+  @apply hover:text-white transition-colors;
+}
+
+.footer-social {
+  @apply flex gap-6;
+}
+
+.social-link {
+  @apply text-gray-400 hover:text-white transition-colors;
+}

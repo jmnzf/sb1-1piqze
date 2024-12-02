@@ -1,0 +1,7 @@
+.orders-content {
+  @apply bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md;
+}
+
+.orders-list {
+  @apply space-y-4;
+}

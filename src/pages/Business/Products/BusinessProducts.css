@@ -1,0 +1,7 @@
+.products-content {
+  @apply bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md;
+}
+
+.products-grid {
+  @apply grid grid-cols-1 gap-6;
+}

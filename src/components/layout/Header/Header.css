@@ -1,0 +1,162 @@
+/* Header Container */
+.header {
+  @apply bg-[--color-primary] text-white fixed top-0 left-0 right-0 z-50
+         transition-all duration-300 mb-[599px];
+}
+
+.header-top {
+  @apply container mx-auto px-4 pt-3 pb-0 flex items-center justify-between
+         transition-all duration-300;
+}
+
+/* Mobile Menu Button */
+.mobile-menu-button {
+  @apply lg:hidden flex items-center justify-center w-10 h-10
+         hover:bg-gray-700 rounded-full transition-colors;
+}
+
+.mobile-menu-button .icon {
+  @apply w-6 h-6;
+}
+
+/* Header Sections */
+.header-left {
+  @apply flex items-center gap-4;
+}
+
+.header-center {
+  @apply flex-1 max-w-2xl mx-8;
+}
+
+.header-right {
+  @apply hidden lg:flex items-center gap-4;
+}
+
+/* Logo */
+.logo {
+  @apply flex items-center transition-all duration-300;
+}
+
+.logo-image {
+  @apply h-16 w-auto transition-all duration-300 lg:h-32;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+  @apply lg:hidden fixed inset-0 bg-[--color-primary] pt-20 px-4
+         transform -translate-x-full transition-transform duration-300;
+}
+
+.mobile-menu.open {
+  @apply translate-x-0;
+}
+
+/* Desktop Menu */
+.desktop-menu {
+  @apply hidden lg:block mx-auto px-4 py-2;
+}
+
+.desktop-menu .navigation-menu {
+  @apply flex items-center justify-center gap-8;
+}
+
+/* Navigation Items */
+.nav-item {
+  @apply flex items-center justify-center gap-2 text-gray-300 
+         hover:bg-[#121212] transition-colors duration-200 text-[14px]
+         relative py-2 px-4 rounded-md text-lg;
+}
+
+.nav-item.active {
+  @apply bg-[#121212] text-[--color-text-green];
+}
+
+.nav-item.active .nav-icon {
+  @apply text-[--color-text-green];
+}
+
+.nav-item:hover .nav-icon {
+  @apply text-green-400;
+}
+
+.nav-icon {
+  @apply text-gray-300 transition-colors duration-200;
+}
+
+.nav-item span {
+  @apply text-gray-300;
+}
+
+.nav-item.active span {
+  @apply text-[--color-text-green];
+}
+
+.cart-badge {
+  @apply bg-green-500 text-[10px] rounded-full w-5 h-5 
+         flex items-center justify-center;
+}
+
+/* Collapsed state */
+.header.collapsed {
+  @apply bg-opacity-95 shadow-md;
+}
+
+.header.collapsed .header-top {
+  @apply py-2;
+}
+
+.header.collapsed .logo-image {
+  @apply h-12 lg:h-16;
+}
+
+/* Auth Button */
+.auth-button {
+  @apply flex items-center gap-2 hover:text-green-400 
+         transition-colors duration-200 border-[1px] border-[#009E3C] 
+         rounded-full pl-4;
+}
+
+.auth-text {
+  @apply text-sm font-[400] text-[12px];
+}
+
+.auth-icon {
+  @apply flex items-center justify-center bg-[#009E3C] 
+         text-white rounded-full w-10 h-10 text-[--color-primary];
+}
+
+/* Search Bar */
+.search-container {
+  @apply flex-1 max-w-2xl relative;
+}
+
+.search-input {
+  @apply w-full px-4 py-2 rounded-full bg-white text-gray-900 
+         focus:outline-none focus:ring-2 focus:ring-green-500;
+}
+
+.search-button {
+  @apply absolute right-2 top-1/2 -translate-y-1/2
+         bg-green-600 hover:bg-[--color-text-green]
+         text-white w-10 h-10 rounded-full 
+         flex items-center justify-center;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .header-top {
+    @apply py-2;
+  }
+
+  .logo-image {
+    @apply h-12;
+  }
+
+  .navigation-menu {
+    @apply flex-col items-start py-4;
+  }
+
+  .nav-item {
+    @apply w-full py-3 px-4;
+  }
+}

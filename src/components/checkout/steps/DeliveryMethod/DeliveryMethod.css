@@ -1,0 +1,45 @@
+.delivery-methods {
+  @apply space-y-6;
+}
+
+.delivery-title {
+  @apply text-2xl font-bold text-gray-900 dark:text-white mb-6;
+}
+
+.method-options {
+  @apply grid grid-cols-1 md:grid-cols-2 gap-6;
+}
+
+.method-option {
+  @apply relative flex flex-col p-6 bg-white dark:bg-gray-800
+         border-2 rounded-lg cursor-pointer transition-all;
+}
+
+.method-option.selected {
+  @apply border-[--color-text-green];
+}
+
+.method-option:hover {
+  @apply border-[--color-text-green];
+}
+
+.method-icon {
+  @apply w-12 h-12 text-[--color-text-green] mb-4;
+}
+
+.method-name {
+  @apply text-lg font-medium text-gray-900 dark:text-white mb-2;
+}
+
+.method-description {
+  @apply text-sm text-gray-500 dark:text-gray-400;
+}
+
+.method-price {
+  @apply text-sm font-medium text-[--color-text-green] mt-4;
+}
+
+.next-button {
+  @apply w-full bg-[--color-text-green] text-white py-3 rounded-full
+         hover:bg-green-700 transition-colors mt-8;
+}

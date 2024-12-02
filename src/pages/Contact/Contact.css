@@ -1,0 +1,79 @@
+.contact-page {
+  @apply py-12 bg-white dark:bg-gray-900;
+}
+
+.contact-container {
+  @apply max-w-4xl mx-auto px-4;
+}
+
+.contact-header {
+  @apply mb-12 text-center;
+}
+
+.contact-title {
+  @apply text-4xl font-bold text-gray-900 dark:text-white mb-4;
+}
+
+.contact-subtitle {
+  @apply text-lg text-gray-600 dark:text-gray-400;
+}
+
+.contact-content {
+  @apply grid grid-cols-1 md:grid-cols-2 gap-12;
+}
+
+.contact-info {
+  @apply space-y-6;
+}
+
+.info-title {
+  @apply text-2xl font-semibold text-gray-900 dark:text-white mb-4;
+}
+
+.info-item {
+  @apply flex items-start space-x-4;
+}
+
+.info-icon {
+  @apply w-6 h-6 text-[--color-text-green] mt-1;
+}
+
+.info-text {
+  @apply text-gray-700 dark:text-gray-300;
+}
+
+.contact-form {
+  @apply space-y-6;
+}
+
+.form-group {
+  @apply space-y-2;
+}
+
+.form-label {
+  @apply block text-sm font-medium text-gray-700 dark:text-gray-300;
+}
+
+.form-input {
+  @apply w-full px-4 py-2 border border-gray-300 dark:border-gray-600
+         rounded-lg bg-white dark:bg-gray-700
+         text-gray-900 dark:text-white
+         focus:ring-2 focus:ring-[--color-text-green]
+         focus:border-transparent;
+}
+
+.form-textarea {
+  @apply w-full px-4 py-2 border border-gray-300 dark:border-gray-600
+         rounded-lg bg-white dark:bg-gray-700
+         text-gray-900 dark:text-white
+         focus:ring-2 focus:ring-[--color-text-green]
+         focus:border-transparent
+         h-32 resize-none;
+}
+
+.submit-button {
+  @apply w-full bg-[--color-text-green] text-white py-3 px-6
+         rounded-lg hover:bg-green-700 transition-colors
+         focus:outline-none focus:ring-2 focus:ring-offset-2
+         focus:ring-[--color-text-green];
+}

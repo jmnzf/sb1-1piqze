@@ -1,0 +1,43 @@
+.featured-products {
+  @apply py-12 bg-white;
+}
+
+.featured-products-container {
+  @apply container mx-auto px-4;
+}
+
+.featured-products-header {
+  @apply flex justify-between items-center mb-8;
+}
+
+.featured-products-title {
+  @apply text-3xl font-bold text-gray-900;
+}
+
+.view-all {
+  @apply text-[#009E3C] font-medium hover:underline;
+}
+
+.products-grid {
+  @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6;
+}
+
+.loading-spinner {
+  @apply flex justify-center items-center py-8;
+}
+
+.loading-spinner svg {
+  @apply animate-spin h-8 w-8 text-[#009E3C];
+}
+
+.product-wrapper {
+  @apply relative transition-all duration-200;
+}
+
+.product-wrapper.selected {
+  @apply ring-2 ring-[#009E3C] ring-offset-2 rounded-lg;
+}
+
+.product-wrapper:focus {
+  @apply outline-none;
+}

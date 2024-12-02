@@ -1,0 +1,19 @@
+.cart-page {
+  @apply py-8;
+}
+
+.cart-container {
+  @apply container mx-auto px-4;
+}
+
+.cart-content {
+  @apply grid grid-cols-1 lg:grid-cols-3 gap-8;
+}
+
+.cart-list {
+  @apply lg:col-span-2;
+}
+
+.cart-summary-container {
+  @apply lg:col-span-1;
+}

@@ -1,0 +1,18 @@
+.theme-toggle {
+  @apply fixed right-6 top-1/2 -translate-y-1/2 z-50
+         bg-white dark:bg-gray-800
+         w-12 h-12 rounded-full
+         flex items-center justify-center
+         shadow-lg cursor-pointer
+         transition-all duration-300
+         hover:scale-110;
+}
+
+.theme-toggle-icon {
+  @apply w-6 h-6 text-gray-800 dark:text-white
+         transition-transform duration-300;
+}
+
+.theme-toggle:hover .theme-toggle-icon {
+  @apply transform rotate-12;
+}

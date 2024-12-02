@@ -1,0 +1,18 @@
+.category-card {
+  @apply relative overflow-hidden rounded-lg transition-transform hover:scale-105;
+  height: 300px; /* Ajusta la altura de la tarjeta según tus necesidades */
+}
+
+.category-image {
+  @apply w-full h-64 object-cover;
+}
+
+.category-button {
+  @apply absolute bottom-0 left-0 right-0
+         bg-white text-gray-800 font-medium
+         py-3 px-4
+         border-2 border-[--color-text-green]
+         transition-colors hover:bg-[#009E3C] hover:text-white
+         truncate text-center rounded-full;
+  transform: translateY(-30%); /* Mueve el botón hacia arriba para que quede en medio */
+}

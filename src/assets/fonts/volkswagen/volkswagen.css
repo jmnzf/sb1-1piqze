@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'Volkswagen Serial Black';
+  src: url('./VolkswagenSerialBlack.woff2') format('woff2'),
+       url('./VolkswagenSerialBlack.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
